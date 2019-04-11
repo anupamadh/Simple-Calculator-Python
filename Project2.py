@@ -191,8 +191,8 @@ while True:
     
     # Inform Player of their chips total 
     print("Player chips total: {}".format(player_chips.total))
+    
     # Ask to play again
-   
     y_or_n = input("Do you want to play again? y or n ")
     if y_or_n.lower() == 'y':
         playing = True

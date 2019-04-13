@@ -197,7 +197,7 @@ while True:
     
     # Ask to play again
     y_or_n = input("Do you want to play again? y or n ")
-    if y_or_n.lower() == 'y':
+    if y_or_n[0].lower() == 'y':
         playing = True
     else:
         playing = False

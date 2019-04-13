@@ -83,9 +83,11 @@ def hit_or_stand(deck,hand):
     global playing  # to control an upcoming while loop
     while True:
         h_or_s = input("Enter Hit (h) or Stand(s): ")
-        if h_or_s.lower() == 'h':
+        #To account for cases where the player enters ss or hh
+        #Take only the 1st letter
+        if h_or_s[0].lower() == 'h':
             hit(deck,hand)
-        elif h_or_s.lower() == 's':
+        elif h_or_s[0].lower() == 's':
             playing = False
         else:
             print("You have not entered the correct value. Please enter 'h' or 's'")
@@ -182,9 +184,7 @@ while True:
       
         if dealer_hand.value > 21:
             dealer_busts(player_chips)
-
-            
-        if player_hand.value < dealer_hand.value:
+        elif player_hand.value < dealer_hand.value:
             dealer_wins(player_chips)
         elif dealer_hand.value < player_hand.value:
             player_wins(player_chips)

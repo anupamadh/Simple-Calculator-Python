@@ -24,7 +24,7 @@ class Deck(Card):
    
     
     def __str__(self):
-            return ', '.join([str(i) for i in self.deck])
+            return '\n'.join([str(card) for card in self.deck])
 
     def shuffle(self):
         random.shuffle(self.deck)

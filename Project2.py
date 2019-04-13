@@ -189,6 +189,7 @@ while True:
         elif dealer_hand.value < player_hand.value:
             player_wins(player_chips)
         else:
+            #Tie situation
             push()
     
     # Inform Player of their chips total 

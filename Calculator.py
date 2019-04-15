@@ -25,6 +25,8 @@ print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+#Enter choice as a string
+#Enter the two numbers as integers
 choice = input("Enter the operation you want to perform: " )
 print(choice)
 x = int(input("Enter the first number "))
